@@ -4,6 +4,9 @@
 
 <p><strong>Email:</strong> <a href="mailto:me@rhw.one">me@rhw.one</a> to request any game!</p>
 
+<input type="text" id="searchBar" onkeyup="searchGames()" placeholder="Search..." style="width: 100%; padding: 10px; margin-bottom: 10px;">
+
+<div id="gamesList">
 <h3>Minecraft 1.8.8</h3>
 <p><strong>IOS:</strong> <a href="https://svg4school-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/LupineVault/imageopensocial@d6de3906f22a3324c7f8042b0ac9cdc3c5cd173d/mc.xml&amp;container=ig" target="_blank">Click Here</a></p>
 <p><strong>DATA:</strong></p>
@@ -19,7 +22,7 @@
 <h3>Buckshot Roulette (Official Steam Version - Decomp WASM)</h3>
 <p><strong>IOS:</strong> <a href="https://redsvg4school-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/LupineVault/imageopensocial@8056bbae1df5cf2cceebac7113871fd8597d51bc/bck.xml&amp;container=ig" target="_blank">Click Here</a></p>
 <p><em>(Unfortunately, this does not run on DATA links because GoDot requires HTTPS 😢)</em></p>
-
+</div>
 <script>
 function copyToClipboard(elementId) {
     var text = document.getElementById(elementId).textContent;
@@ -27,6 +30,22 @@ function copyToClipboard(elementId) {
         alert("Copied to clipboard!");
     }).catch(err => {
         console.error("Failed to copy: ", err);
+    });
+}
+
+function searchGames() {
+    let input = document.getElementById('searchBar').value.toLowerCase();
+    let games = document.querySelectorAll('#gamesList h3');
+    
+    games.forEach(game => {
+        let title = game.textContent.toLowerCase();
+        let parent = game.parentElement;
+        
+        if (title.includes(input)) {
+            parent.style.display = "block";
+        } else {
+            parent.style.display = "none";
+        }
     });
 }
 </script>
