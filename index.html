@@ -36,16 +36,18 @@ function copyToClipboard(elementId) {
 function searchGames() {
     let input = document.getElementById('searchBar').value.toLowerCase();
     let games = document.querySelectorAll('#gamesList h3');
-    
+
     games.forEach(game => {
         let title = game.textContent.toLowerCase();
         let parent = game.parentElement;
+
         
         if (title.includes(input)) {
-            parent.style.display = "block";
+            parent.style.display = "";
         } else {
             parent.style.display = "none";
         }
     });
 }
+
 </script>
