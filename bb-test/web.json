@@ -1,9 +1,9 @@
 {
 "companyName": "Juicy Beast Studio",
 "productName": "Burrito Bison",
-"dataUrl": "https://cdn.jsdelivr.net/gh/redispurple/red-list@319994c03441eb0b38f729f4fe7458bcd79df6d4/bb-test/web.data.unityweb",
-"asmCodeUrl": "https://cdn.jsdelivr.net/gh/redispurple/red-list@319994c03441eb0b38f729f4fe7458bcd79df6d4/bb-test/web.asm.code.unityweb",
-"asmMemoryUrl": "https://cdn.jsdelivr.net/gh/redispurple/red-list@319994c03441eb0b38f729f4fe7458bcd79df6d4/bb-test/web.asm.memory.unityweb",
+"dataUrl": "https://rawcdn.githack.com/redispurple/red-list/16b646e7ad6eb92590c41bbf0fa0254ca2b65880/bb-test/web.data.unityweb",
+"asmCodeUrl": "https://rawcdn.githack.com/redispurple/red-list/16b646e7ad6eb92590c41bbf0fa0254ca2b65880/bb-test/web.asm.code.unityweb",
+"asmMemoryUrl": "https://rawcdn.githack.com/redispurple/red-list/16b646e7ad6eb92590c41bbf0fa0254ca2b65880/bb-test/web.asm.memory.unityweb",
 "asmFrameworkUrl": "https://cdn.jsdelivr.net/gh/redispurple/red-list@319994c03441eb0b38f729f4fe7458bcd79df6d4/bb-test/web.asm.framework.unityweb",
 "TOTAL_MEMORY": 536870912,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
